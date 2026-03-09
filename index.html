@@ -17,7 +17,10 @@ html,body{height:100%;font-family:'Sora',sans-serif;}
 body{background:#50C878;color:var(--text);display:flex;align-items:center;justify-content:center;min-height:100vh;overflow:hidden;position:relative;}
 .bg-wrap{display:none;}
 .bb{display:none;}
-
+.g_id_sign {
+    align-items: center;
+    text-align: center;
+}
 
 
 
@@ -124,10 +127,7 @@ body{background:#50C878;color:var(--text);display:flex;align-items:center;justif
 <div class="g_id_signin"
      data-type="standard"
      data-size="large"
-     data-theme="outline"
-     justify-content: center;
-     align-items: center;>
-    </div>
+     data-theme="outline"></div>
 
 <!-- Your JS callback function (add this in a <script> tag) -->
 <script>
@@ -179,5 +179,7 @@ sb.auth.onAuthStateChange((ev,session)=>{if(ev==='SIGNED_IN'&&session){if(!sessi
 // DEMO fallback — remove in production
 document.getElementById('loginBtn').onclick=()=>window.location.href='landing.html';
 </script>
+
+
 </body>
 </html>
