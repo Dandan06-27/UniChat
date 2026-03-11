@@ -299,12 +299,6 @@ body{
     const email = payload.email || '';
     const name  = payload.name  || 'Student';
 
-    // ── 2. Domain check: must end with .edu.ph ──
-    if (!email.endsWith('.edu.ph')) {
-      showToast(`Access denied. "${email}" is not an .edu.ph account.`, '🚫', 'error');
-      return;
-    }
-
     // ── 3. Valid .edu.ph — show loading state ──
     showLoading();
     showToast(`Welcome, ${name}! Verifying your credentials…`, '✅', 'success');
